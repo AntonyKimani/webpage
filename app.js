@@ -7,4 +7,11 @@ navToggle.addEventListener('click',()=>{
 })
 navClose.addEventListener('click',()=>{
     navMenu.style.transform = 'translateX(500px)';
+    navClose.style.transform = 'rotateX(180deg)';
 })
+
+const skillSet = [
+    {
+        
+    }
+]

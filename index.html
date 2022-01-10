@@ -4,8 +4,10 @@
         <link rel = "stylesheet" type = "text/css" href = "style.css">
         <meta charset = "UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
     <body>
+        <p class = "title"> Explore | Design | Build</p>
         <button class = "navToggle">
             <img src = "images/menu.png">
         </button>
@@ -19,6 +21,17 @@
                     <li><a href = "#">Gallery</a> </li>
                 </ul>
             </nav>
+            <span class = "social-media">
+                <a href = "#">
+                    <img src = "images/twitter.png">Twitter
+                </a>
+                <a href = "#">
+                    <img src = "images/whatsapp.png">Whatsapp
+                </a>
+                <a href = "#">
+                    <img src = "images/github.png">Github
+                </a>
+            </span>
             <button class = "navClose">
                 <img src = "images/close.png">
             </button>
@@ -26,11 +39,39 @@
         <section class = "home-bar">
             <img src = "images/individuality-concept-among-light-bulb.jpg">
             <span class = "home-text">
-                <h1>Hello I'm Kimani</h1>
-                <p>A Front-End Web Developer</p>
-                <p>I help businesses connect<br> with their communities online</p>
-            </span>
+                <h1 data-aos = "fade-right" data-aos-delay = "450">Hello I'm Kimani</h1>
+                <p data-aos = "fade-right" data-aos-delay = "600">A Front-End Web Developer</p>
+                <p data-aos = "fade-right" data-aos-delay = "850">I help businesses connect<br> with their communities online</p>
+            </span> 
+        </section>
+        <section class = "portfolio-bar">
+            <div class = "portfolio-tile" data-aos = "fade-up" data-aos-delay = "150">
+                <div class = "portfolio">
+                    <img src = "images/html.png">
+                    <h3>HTML5</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, molestiae?</p>
+                </div>
+            </div>
+            <div class = "portfolio-tile" data-aos = "fade-up" data-aos-delay = "300">
+                <div class = "portfolio">
+                    <img src = "images/css-3.png">
+                    <h3>CSS3</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, molestiae?</p>
+                </div>
+            </div>
+            <div class = "portfolio-tile" data-aos = "fade-up" data-aos-delay = "450">
+                <div class = "portfolio">
+                    <img src = "images/javascript.png">
+                    <h3>JavaScript</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, molestiae?</p>
+                </div>
+            </div>
         </section>
     </body>
+    <div style = "margin-top:500px"></div>
     <script src = "app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init("duration:800,");
+      </script>
 </html>
