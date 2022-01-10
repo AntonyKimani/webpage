@@ -146,7 +146,28 @@
         font-size:1.3em;
         padding:2px 1em;
     }
-
+    .home-bar h3{
+        position:relative;
+        bottom:15em;
+        padding:3px 30px;
+        color:white;
+        left:15px;
+        animation:hover 3s ease-in-out infinite;
+    }
+    @keyframes hover{
+        0%,100%{
+            transform:translateY(0px);
+        }
+        50%{
+            transform:translateY(5px);
+        }
+    }
+    .home-bar h1{
+        position:relative;
+        bottom:8em;
+        padding:0px 2em;
+        text-align:center;
+    }
     .portfolio-bar{
         z-index:9999;
         position:relative;
@@ -185,5 +206,6 @@
         position:relative;
         left:3.5em;
     }
+ 
     
 }
