@@ -7,18 +7,23 @@
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
     <body>
-        <p class = "title"> Explore | Design | Build</p>
-        <button class = "navToggle">
+        <section class="background">
+            <p class = "title"> Explore | Design | Build</p>
+        <div class = "sticky">
+             <button class = "navToggle">
+            <img src = "images/menu.png">
+        </button>
+        <button class = "sideToggle">
             <img src = "images/menu.png">
         </button>
         <section class = "nav-menu">
             <nav>
                 <ul>
-                    <li><a href = "#">Home</a> </li>
-                    <li><a href = "#">Portfolio</a> </li>
-                    <li><a href = "#">Blogs</a> </li>
-                    <li><a href = "#">Contact</a> </li>
-                    <li><a href = "#">Gallery</a> </li>
+                    <li><a href = "#">Home<img src = "images/home.png" class ="home"></a></li>
+                    <li><a href = "#">Portfolio<img src = "images/profile-user.png" class = "user"></a></li>
+                    <li><a href = "#">Blogs<img src = "images/writing.png" class = "write"></a> </li>
+                    <li><a href = "#">Contact<img src = "images/phone-call.png" class = "call"> </a></li>
+                    <li><a href = "#">Gallery<img src ="images/gallery.png" class = "gallery"></a> </li>
                 </ul>
             </nav>
            <!--- <span class = "social-media">
@@ -32,19 +37,26 @@
                     <img src = "images/github.png">Github
                 </a>
             </span>-->
+            <button class = "sideClose">
+                Close
+            </button>
             <button class = "navClose">
                 <img src = "images/close.png">
             </button>
+        </div>
+       
         </section>
+        </section>
+        
         <section class = "home-bar">
             <img src = "images/individuality-concept-among-light-bulb.jpg">
             <span class = "home-text">
-                <h1 data-aos = "fade-right" data-aos-delay = "450">Hello I'm Kimani</h1>
-                <p data-aos = "fade-right" data-aos-delay = "600">A Front-End Web Developer</p>
-                <p data-aos = "fade-right" data-aos-delay = "850">I help businesses connect<br> with their communities online</p>
-            </span> 
-            <h3>Follow my Journey down below</h3>
-            <h1>Technologies and Languages</h1>
+                <h1 data-aos = "fade-right" data-aos-delay = "450">Hello I'm Kimani..</h1>
+                <h3 data-aos = "fade-right" data-aos-delay = "600">A Front-End Web Developer</h3>
+                <p data-aos = "fade-right" data-aos-delay = "850">I help businesses connect with their communities online</p>
+            </span>
+            <h3 class = "position">Follow my Journey down below</h3>
+            <h1 class = "position-text">Technologies and Languages</h1>
         </section>
         <section class = "portfolio-bar">
             <div class = "portfolio-tile" data-aos = "fade-up" data-aos-delay = "150">
@@ -70,7 +82,7 @@
             </div>
         </section>
     </body>
-    <div style = "margin-top:500px"></div>
+    <div style = "margin-top:700px"></div>
     <script src = "app.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
