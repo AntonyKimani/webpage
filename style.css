@@ -243,7 +243,7 @@ call{
       overflow-x:hidden;
     }*/
     .background{
-        background-image:url("images/white-paper-airplane-corner-coral-background.jpg");
+        background-image:url('images/background-image.jpg');
         background-size:cover;
         background-position:-60px 20px;
         height:100vh;
@@ -265,14 +265,15 @@ call{
         flex-direction:column;
         justify-content: flex-start;
         position:relative;
-        left:2em;
+        left:2.5em;
+        top:5em;
         width:300px;
     }
     .home-text h1{
         position:relative;
         font-size:var(--large-font-size);
         top:2em;
-        right:3em;
+        right:2.5em;
         width:auto;
     }
     .home-text h3{
@@ -311,7 +312,15 @@ call{
      }
      .home-text{
          position:relative;
-         left:-1em;
+         left:0;
+     }
+     .position{
+         position:relative;
+         left:0;
+     }
+     .position-text{
+         position:relative;
+         left:0;
      }
  }
     
