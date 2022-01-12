@@ -4,6 +4,7 @@
     --second-color:#FF7D7D;
     --third-color:#fc6b6b;
     --fourth-color:white;
+    --background-color:#fff9f9;
     --large-font-size:36px;
     --heading-font-size:100px;
     --heading-h3-font-size:50px;
@@ -13,6 +14,9 @@
     margin:0;
     padding:0;
     font-family:sans-serif;
+}
+body{
+    background-color:var(--background-color);
 }
 .background{
     background-image:url("images/white-paper-airplane-corner-coral-background.jpg");
@@ -150,7 +154,6 @@ call{
     z-index:50;
 }
 .home-text{
-    background:red;
     z-index:50;
     display:grid;
     width:1000px;
@@ -197,7 +200,6 @@ call{
     left:10em;
     top:20em;
     width:1000px;
-    background:red;
 }
 .dot-1{
     animation:jump 10s ease-in-out infinite;
@@ -212,17 +214,31 @@ call{
 }
 .portfolio-bar{
     display:grid;
-    grid-template-columns:30% 30% 30%;
+    padding:20px;
+    position:relative;
+    top:20em;
 }
 .portfolio-tile{
-    
+    padding:30px 0px;
+}
+.portfolio{
+    box-shadow:0 1px 0  rgba(22,8,43,.1);
+    padding-bottom:10px 0;
+}
+.portfolio h3{
+    color:var(--second-color);
+    font-size:var(--large-font-size);
+}
+.portfolio p{
+    color:var(--first-color);
+    font-size:var(--subheading-font-size);
 }
 .portfolio img{
     width:100px;
     justify-content:center;
     height:auto;
 }
-@media(max-width:375px){
+@media(max-width:500px){
   /*  body{
       overflow-x:hidden;
     }*/
@@ -242,23 +258,61 @@ call{
 
     }
     .nav-menu{
-        width:50%;
+        width:40%;
     }
     .home-text{
-
-        height:10px;
+        display:flex;
+        flex-direction:column;
+        justify-content: flex-start;
         position:relative;
-        right:4em;
+        left:2em;
+        width:300px;
     }
     .home-text h1{
-        position:absolute;
+        position:relative;
         font-size:var(--large-font-size);
-        right:0;
-        margin:0;
         top:2em;
-
+        right:3em;
         width:auto;
     }
- 
+    .home-text h3{
+        position:relative;
+        font-size:var(--subheading-font-size);
+        top:4em;
+        left:3em;
+        width:100%
+    }
+    .home-text p{
+        position:relative;
+        font-size:var(--subheading-font-size);
+        left:3em;
+        top:5em;
+        width:100%;
+    }
+    .position{
+        position:relative;
+        left:1em;
+        width:100%;
+    }
+    .position-text{
+        width:100%;
+        position:relative;
+        left:2em;
+        display:flex;
+        justify-content: flex-start;
+    }
+    .portfolio-bar{
+
+    }
+
+ @media(max-width:375px){
+     .nav-menu{
+         width:50%;
+     }
+     .home-text{
+         position:relative;
+         left:-1em;
+     }
+ }
     
 }
