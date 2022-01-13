@@ -9,6 +9,7 @@
     --heading-font-size:100px;
     --heading-h3-font-size:50px;
     --subheading-font-size:24px;
+    --paragraph-font-size:16px;
 }
 *{
     margin:0;
@@ -238,6 +239,66 @@ call{
     justify-content:center;
     height:auto;
 }
+.experience{
+    background:var(--second-color);
+    position:relative;
+    top:30em;
+}
+.experience h1{
+    display:flex;
+    justify-content:center;
+    font-size:var(--heading-font-size);
+    color:var(--first-color);
+    width:100%;
+}
+.experience-year{
+    display:grid;
+    grid-template-columns:40% 40%;
+    padding:2em;
+    width:100%;
+}
+.business{
+    display:grid;
+    row-gap:2%;
+    width:100%;
+}
+.business-type{
+    padding:2em;
+    border-bottom:2px var(--first-color) solid;
+    width:100%;
+}
+.business-type h3{
+    font-size:var(--heading-h3-font-size);
+    color:var(--first-color);
+    padding-bottom:.5em;
+    width:100%;
+}
+.business-type h4{
+    font-size:var(--subheading-font-size);
+    color:var(--first-color);
+    width:100%;
+}
+.job{
+    display:grid;
+    row-gap:2%;
+    border-left:2px var(--first-color) solid;
+    width:100%;
+}
+.job-type{
+    padding:2em;
+    width:100%;
+}
+.job-type h3{
+    font-size:var(--heading-h3-font-size);
+    color:var(--first-color);
+    padding-bottom:.5em;
+    width:100%;
+}
+.job-type h4{
+    font-size:var(--subheading-font-size);
+    color:var(--first-color);
+    width:100%;
+}
 @media(max-width:500px){
   /*  body{
       overflow-x:hidden;
@@ -305,6 +366,34 @@ call{
     .portfolio-bar{
 
     }
+    .experience-year{
+        display:grid;
+        grid-template-columns:90%;
+    }
+    .experience h1{
+        font-size: var(--heading-h3-font-size);
+        display:flex;
+        justify-content:center;
+    }
+    .business{
+        display:none;
+    }
+    .job-type{
+        box-shadow:0 10px 15px(0,0,0,0.3);
+        background-color:var(--first-color);
+        width:100%;
+        height:auto;
+        position:relative;
+        right:2em;
+        border-radius:15px;
+    }
+    .job-type h3{
+        color:var(--second-color);
+    }
+    .job-type h4{
+        color:var(--second-color);
+    }
+
 
  @media(max-width:375px){
      .nav-menu{
